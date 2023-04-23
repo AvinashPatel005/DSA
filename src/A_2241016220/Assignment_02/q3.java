@@ -32,8 +32,11 @@ class Student {
         int maxIndex = -1;
         int max = Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
-            if(arr[i].DSA_MARKS>max)
+            if(arr[i].DSA_MARKS>max){
+                max=arr[i].DSA_MARKS;
                 maxIndex=i;
+            }
+
         }
         System.out.print("Highest Marks Obtained by : ");
         arr[maxIndex].display();
