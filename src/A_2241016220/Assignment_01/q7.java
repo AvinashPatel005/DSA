@@ -7,7 +7,7 @@ public class q7 {
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
         int maxCount=0,minCount=0;
-        int maxIn=0,minIn=0;
+        int maxIn=-1,minIn=-1;
 
         Scanner sc = new Scanner(System.in);
 
@@ -42,8 +42,8 @@ public class q7 {
         }
 
         System.out.println("Maximum element of Array is "+max+" and occurs "+maxCount+" times");
-        System.out.println("Maximum element of Array is "+min+" and occurs "+minCount+" times");
+        System.out.println("Minimum element of Array is "+min+" and occurs "+minCount+" times");
         System.out.println("First occurrence of maximum element is at position "+maxIn);
-        System.out.println("Last occurrence of maximum element is at position "+minIn);
+        System.out.println("Last occurrence of minimum element is at position "+minIn);
     }
 }
