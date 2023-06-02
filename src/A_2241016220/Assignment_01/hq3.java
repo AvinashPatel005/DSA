@@ -15,8 +15,7 @@ public class hq3 {
         System.out.print("Enter number of Elements :");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        int[] a = new int[n];
-        int[] b = new int[n];
+        int[] a = new int[n],b = new int[n];
         System.out.print("Enter the elements of a :");
         for(int i=0;i<a.length;i++){
             a[i]=scanner.nextInt();

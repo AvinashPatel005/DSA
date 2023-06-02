@@ -11,7 +11,8 @@ public class hq1 {
         int c = sc.nextInt();
 
         if(a+b==c) System.out.println("a+b=c => "+a+"+"+b+"="+c);
-        if(a==b-c) System.out.println("a=b-c => "+a+"="+b+"-"+c);
-        if(a*b==c) System.out.println("a*b=c => "+a+"*"+b+"="+c);
+        else if(a==b-c) System.out.println("a=b-c => "+a+"="+b+"-"+c);
+        else if(a*b==c) System.out.println("a*b=c => "+a+"*"+b+"="+c);
+        else System.out.println("Cannot be written in correct arithmetic formula");
     }
 }

@@ -14,7 +14,8 @@ public class hq4 {
     }
     public static void main(String[] args) {
         double[][] arr = {{1,2},{2,3}};
-        double[][] res = addMatrix(arr,arr);
+        double[][] arr1 = {{3,4},{4,5}};
+        double[][] res = addMatrix(arr,arr1);
         for(double[] a:res){
             for(double d:a){
                 System.out.print(d+" ");

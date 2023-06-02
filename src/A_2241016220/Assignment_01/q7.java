@@ -23,7 +23,7 @@ public class q7 {
           if(min>arr[i]){
               min = arr[i];
               minCount=1;
-              maxIn=i+1;
+              minIn=i+1;
           }
           else if(min==arr[i]){
               minCount++;

@@ -34,15 +34,17 @@ public class hq5 {
         printMatrix(a);
         int rowMax=0;
         int colMax=0;
-        int rowVal=Integer.MIN_VALUE;
-        int colVal=Integer.MIN_VALUE;
+        int rowVal, colVal;
+        rowVal=colVal=Integer.MIN_VALUE;
         for(int i=0;i<a.length;i++){
-            if(rowVal<rowSum(a,i)){
-                rowVal=rowSum(a,i);
+            int temp1= rowSum(a,i);
+            int temp2= columnSum(a,i);
+            if(rowVal<temp1){
+                rowVal=temp1;
                 rowMax=i;
             }
-            if(colVal<columnSum(a,i)){
-                colVal=columnSum(a,i);
+            if(colVal<temp2){
+                colVal=temp2;
                 colMax=i;
             }
         }
