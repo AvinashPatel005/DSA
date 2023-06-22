@@ -146,7 +146,7 @@ public class linkedList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Node start = null;
-        System.out.println("Program for creating single linkedlist");
+        System.out.println("Program for creating single Linked-List");
         while(true)
         {
             System.out.println("Manu for different operation");

@@ -1,4 +1,4 @@
-package linkedList;
+package LinkedList;
 //using collection frameworks
 import java.util.*;
 public class l2 {
