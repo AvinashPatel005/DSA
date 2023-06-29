@@ -2,17 +2,18 @@ package A_2241016220.Assignment_04;
 
 import java.util.Scanner;
 
-class Node{
-    protected int regd_no;
-    protected float mark;
-    protected Node next;
-}
+
 public class linkedList {
+    static class Node{
+        protected int regd_no;
+        protected float mark;
+        protected Node next;
+    }
     public static Node inputNode(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the registration number of new node: ");
         int regd_no = sc.nextInt();
-        System.out.println("Enter the roll number of node: ");
+        System.out.println("Enter the mark number of node: ");
         float mark = sc.nextFloat();
         Node node = new Node();
         node.regd_no = regd_no;
@@ -138,7 +139,7 @@ public class linkedList {
     public static void display(Node start){
         System.out.println("Regd.no \t Marks");
         Node p = start;
-        while(p!=null){
+        while(p.next!=null){
             System.out.println(p.regd_no+" \t\t "+p.mark);
             p=p.next;
         }

@@ -24,6 +24,7 @@ class Distance{
         Distance d2 = new Distance(7,50);
         d2.display();
         Distance d3 = d2.sum(d1,d2);
+        System.out.print("Sum: ");
         d3.display();
     }
 }

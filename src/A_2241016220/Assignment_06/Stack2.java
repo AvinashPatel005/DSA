@@ -2,12 +2,12 @@ package A_2241016220.Assignment_06;
 
 import java.util.Scanner;
 
-class Node{
-    int data;
-    Node next;
-}
 public class Stack2 {
 
+    static class Node{
+        int data;
+        Node next;
+    }
     public static Node push(Node Top){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Element to Push:");
