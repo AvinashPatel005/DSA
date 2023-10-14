@@ -46,13 +46,9 @@ public class linkedList {
     }
     public static Node InsBeg(Node start){
         Node node = inputNode();
-        if(start==null){
-            start=node;
-        }
-        else{
-            node.next=start;
-            start=node;
-        }
+
+        node.next=start;
+        start=node;
         return start;
     }
     public static Node InsEnd(Node start){
@@ -139,7 +135,7 @@ public class linkedList {
     public static void display(Node start){
         System.out.println("Regd.no \t Marks");
         Node p = start;
-        while(p.next!=null){
+        while(p!=null){
             System.out.println(p.regd_no+" \t\t "+p.mark);
             p=p.next;
         }

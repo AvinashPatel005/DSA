@@ -1,6 +1,6 @@
 package Array.BASIC;
 //Leaders in an Array
-//
+//O(n^2)
 public class q12 {
     public static void main(String[] args) {
         int[] arr = {16, 17, 4, 3, 5, 2};
