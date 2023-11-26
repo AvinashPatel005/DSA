@@ -14,14 +14,13 @@ public class q2 {
                 j++;
             }
         }
-        System.out.println(j);
+        System.out.println(Arrays.toString(arr));
         int k=0;
         for (int i = j; i < n && i-j<j; i++) {
             int temp=arr[i];
             arr[i]=arr[k];
             arr[k]=temp;
             k+=2;
-            System.out.println(Arrays.toString(arr));
         }
     }
 
